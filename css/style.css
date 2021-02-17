@@ -1,0 +1,28 @@
+/******************* fonts *******************/
+@font-face {
+  font-family: "franklin";
+  src:
+    url("../fonts/LibreFranklin-Regular.woff") format("woff"),
+    url("../fonts/LibreFranklin-Regular.ttf") format("truetype"),
+    url("../fonts/LibreFranklin-Regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "cheltenham";
+  src:
+    url("Cheltenham-Normal.woff") format("woff"),
+    url("Cheltenham-Normal.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Imperial BT";
+  src:
+    url("ImperialBT-Italic.woff") format("woff"),
+    url("ImperialBT-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
