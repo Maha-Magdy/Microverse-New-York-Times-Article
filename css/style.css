@@ -228,7 +228,8 @@ header.navbar {
   justify-content: space-between;
   position: fixed;
   top: 0;
-  width: -webkit-fill-available;
+  box-sizing: border-box;
+  width: 100%;
   background-color: white;
 }
 
@@ -245,18 +246,6 @@ header .sidebar {
 .search svg {
   width: 16px;
   height: 16px;
-}
-
-.sidebar-search-headline-container a {
-  font-size: 14px;
-  font-weight: 700;
-  text-transform: uppercase;
-  -webkit-letter-spacing: 0.7px;
-  -moz-letter-spacing: 0.7px;
-  -ms-letter-spacing: 0.7px;
-  letter-spacing: 0.7px;
-  line-height: 18px;
-  text-decoration: none;
 }
 
 .logo {
@@ -280,13 +269,28 @@ article h1 {
   border-bottom: 1px solid #ebebeb;
 }
 
-.social-media-buttons ul {
-  display: flex;
+aside h3 {
+  text-align: left;
 }
 
-.social-media-buttons li {
-  color: #999;
-  margin-right: 16px;
+aside ul {
+  border-top: 1px solid rgb(226, 226, 226);
+  padding: 10px 0;
+  width: 250px;
+  text-align: left;
+}
+
+aside li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+aside li img {
+  height: auto;
+  max-width: 100px;
+  margin-right: 10px;
+  display: inline-block;
 }
 
 .social-media-buttons svg {
@@ -298,6 +302,14 @@ article h1 {
   padding: 5px;
   width: 15px;
   height: 15px;
+}
+
+.bottom-navigation-links-blocks svg {
+  display: inline-block;
+  height: 13px;
+  width: 13px;
+  margin-right: 7px;
+  vertical-align: middle;
 }
 
 .social-media-buttons svg:hover {
@@ -376,21 +388,6 @@ figcaption span:last-child {
   font-size: 13px;
 }
 
-h3.writer-name {
-  font-size: 15px;
-  margin: 40px auto 20px;
-  cursor: pointer;
-}
-
-h3.writer-name a {
-  text-decoration: underline;
-  margin-left: 5px;
-}
-
-h3.writer-name a:hover {
-  text-decoration: none;
-}
-
 .article-time {
   font-size: 13px;
 }
@@ -412,11 +409,6 @@ h3.writer-name a:hover {
   border: none;
   height: 1px;
   margin: 20px auto;
-}
-
-.create-account-block h6:nth-child(3) a {
-  color: rgb(50, 104, 145);
-  text-decoration: none;
 }
 
 .explain-the-theory {
@@ -453,6 +445,71 @@ h3.writer-name a:hover {
   justify-content: space-between;
   align-items: center;
   margin-top: 25px;
+}
+
+/******************* Footer *******************/
+footer {
+  padding: 10px;
+  border-top: 1px solid #ebebeb;
+  margin: 10px auto !important;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-between;
+  white-space: nowrap;
+  margin: 0;
+}
+
+footer ul li {
+  margin: 0 5px;
+}
+
+.social-media-buttons ul {
+  display: flex;
+}
+
+.social-media-buttons li {
+  color: #999;
+  margin-right: 16px;
+}
+
+.bottom-navigation-links-blocks a {
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.sidebar-search-headline-container a {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 0.7px;
+  -moz-letter-spacing: 0.7px;
+  -ms-letter-spacing: 0.7px;
+  letter-spacing: 0.7px;
+  line-height: 18px;
+  text-decoration: none;
+}
+
+h3.writer-name a {
+  text-decoration: underline;
+  margin-left: 5px;
+}
+
+.sidebar-search-headline-container a:hover {
+  text-decoration: underline;
+}
+
+h3.writer-name a:hover {
+  text-decoration: none;
+}
+
+h3.writer-name {
+  font-size: 15px;
+  margin: 40px auto 20px;
+  cursor: pointer;
 }
 
 .bottom-navigation::before {
@@ -502,19 +559,6 @@ h3.writer-name a:hover {
   font-size: 12px;
 }
 
-.bottom-navigation-links-blocks a {
-  font-size: 13px;
-  white-space: nowrap;
-}
-
-.bottom-navigation-links-blocks svg {
-  display: inline-block;
-  height: 13px;
-  width: 13px;
-  margin-right: 7px;
-  vertical-align: middle;
-}
-
 .bottom-navigation-links-blocks > section:last-child {
   border-left: 1px solid rgb(226, 226, 226);
   padding-left: 15px;
@@ -525,6 +569,11 @@ h3.writer-name a:hover {
   padding-bottom: 5px;
 }
 
+.create-account-block h6:nth-child(3) a {
+  color: rgb(50, 104, 145);
+  text-decoration: none;
+}
+
 .section-has-aside {
   display: flex;
   align-items: center;
@@ -532,55 +581,4 @@ h3.writer-name a:hover {
 
 .section-has-aside > section:first-child {
   margin-left: calc((100% - 600px) / 2);
-}
-
-aside h3 {
-  text-align: left;
-}
-aside ul {
-  border-top: 1px solid rgb(226, 226, 226);
-  padding: 10px 0;
-  width: 250px;
-  text-align: left;
-}
-
-aside li {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-aside li img,
-aside li a {
-  display: inline-block;
-}
-
-aside li img {
-  height: auto;
-  max-width: 100px;
-  margin-right: 10px;
-}
-
-.sidebar-search-headline-container a:hover {
-    text-decoration: underline;
-  }
-
-/******************* Footer *******************/
-footer {
-  padding: 10px;
-  border-top: 1px solid #ebebeb;
-  margin: 10px auto !important;
-  display: flex;
-  justify-content: space-between;
-}
-
-footer ul {
-  display: flex;
-  justify-content: space-between;
-  white-space: nowrap;
-  margin: 0;
-}
-
-footer ul li {
-  margin: 0 5px;
 }
