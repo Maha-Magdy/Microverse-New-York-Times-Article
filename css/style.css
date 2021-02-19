@@ -1,0 +1,735 @@
+/******************* Fonts *******************/
+@font-face {
+  font-family: "franklin";
+  src:
+    url("../fonts/LibreFranklin-Regular.woff") format("woff"),
+    url("../fonts/LibreFranklin-Regular.ttf") format("truetype"),
+    url("../fonts/LibreFranklin-Regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "cheltenham";
+  src:
+    url("../fonts/Cheltenham-Normal.woff") format("woff"),
+    url("../fonts/Cheltenham-Normal.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "imperial-bt";
+  src:
+    url("../fonts/ImperialBT-Italic.woff") format("woff"),
+    url("../fonts/ImperialBT-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+/******************* General Rules *******************/
+html,
+body {
+  margin: 0;
+  font-family: franklin, helvetica, arial, sans-serif;
+  color: black;
+  text-align: center;
+}
+
+a,
+a:hover {
+  color: black;
+}
+
+h1 {
+  font-family: times, serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  text-align: left;
+}
+
+h2 {
+  font-family: imperial-bt, serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+button {
+  background-color: unset;
+  border: none;
+  padding: 0;
+}
+
+p {
+  font-family: imperial-bt, serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+hr {
+  background-color: rgb(204, 204, 204);
+  border: none;
+  width: 75px;
+  height: 1px;
+}
+
+figure {
+  margin: 40px 0;
+}
+
+figure img {
+  width: 100%;
+}
+
+/******************* Common Classes *******************/
+.nyt-btn,
+.nyt-btn:hover {
+  border-radius: 3px;
+  cursor: pointer;
+  white-space: nowrap;
+  vertical-align: middle;
+  background-color: #fff;
+  color: #333;
+  font-size: 11px;
+  line-height: 11px;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.02em;
+  -moz-letter-spacing: 0.02em;
+  -ms-letter-spacing: 0.02em;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  padding: 8px 9px 9px;
+}
+
+.nyt-btn:hover {
+  background-color: #f7f7f7;
+}
+
+.nyt-blue-btn {
+  border-radius: 3px;
+  cursor: pointer;
+  -webkit-transition: ease 0.6s;
+  transition: ease 0.6s;
+  white-space: nowrap;
+  vertical-align: middle;
+  background-color: #567b95;
+  border: 1px solid #326891;
+  color: #fff;
+  font-size: 11px;
+  line-height: 11px;
+  font-weight: 700;
+  -webkit-letter-spacing: 0.05em;
+  -moz-letter-spacing: 0.05em;
+  -ms-letter-spacing: 0.05em;
+  letter-spacing: 0.05em;
+  padding: 11px 12px 8px;
+  text-transform: uppercase;
+}
+
+.width-600,
+.width-750,
+.width-950,
+.width-1200 {
+  margin: 0 auto;
+  text-align: left;
+}
+
+.width-400 {
+  width: 400px;
+  max-width: 400px;
+}
+
+.width-600 {
+  width: 600px;
+  max-width: 600px;
+}
+
+.width-750 {
+  width: 750px;
+  max-width: 750px;
+}
+
+.width-950 {
+  width: 950px;
+  max-width: 950px;
+}
+
+.width-1200 {
+  width: 1200px;
+  max-width: 1200px;
+}
+
+.link-in-text {
+  color: rgb(50, 104, 145);
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.link-in-text:hover {
+  text-decoration: none;
+}
+
+.small-text {
+  font-family: times, serif;
+  font-size: 12px;
+  color: #666;
+}
+
+.c-black {
+  color: black;
+}
+
+.c-grey {
+  color: #666;
+}
+
+.c-blue {
+  color: #567b95;
+}
+
+.franklin-font {
+  font-family: franklin, helvetica, arial, sans-serif;
+}
+
+.mb-5 {
+  margin-bottom: 5px;
+}
+
+.mb-10 {
+  margin-bottom: 10px !important;
+}
+
+.mtb-10 {
+  margin: 10px 0;
+}
+
+.black-left-hr {
+  margin: 0;
+  background-color: black;
+}
+
+a.swap-text-decoration {
+  text-decoration: none;
+}
+
+a.swap-text-decoration:hover {
+  text-decoration: underline;
+}
+
+.text-decoration-none {
+  text-decoration: none;
+}
+
+.font-size-14 {
+  font-size: 14px;
+}
+
+.font-size-16 {
+  font-size: 16px;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+/******************* Style for the header *******************/
+header.navbar {
+  background: transparent;
+  padding: 4px 15px 2px;
+  border-bottom: 1px solid #e2e2e2;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: white;
+}
+
+header button {
+  border: 0;
+  margin-right: 8px;
+}
+
+header .sidebar {
+  margin-right: 8px;
+}
+
+.sidebar svg,
+.search svg {
+  width: 16px;
+  height: 16px;
+}
+
+.logo {
+  width: 195px;
+  height: 26px;
+  margin: 6px auto 0;
+}
+
+.actions-buttons button {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.border-top-black {
+  border-top: 1px solid rgb(0, 0, 0);
+}
+
+/******************* Style for the article *******************/
+article {
+  margin-top: 100px;
+}
+
+article h1 {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ebebeb;
+}
+
+aside h3 {
+  text-align: left;
+}
+
+aside ul {
+  border-top: 1px solid rgb(226, 226, 226);
+  padding: 10px 0;
+  width: 250px;
+  text-align: left;
+}
+
+aside li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+aside li img {
+  height: auto;
+  max-width: 100px;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.social-media-buttons svg {
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #eee;
+  border: 1px #eee solid;
+  border-radius: 100%;
+  padding: 5px;
+  width: 15px;
+  height: 15px;
+}
+
+.bottom-navigation-links-blocks svg {
+  display: inline-block;
+  height: 13px;
+  width: 13px;
+  margin-right: 7px;
+  vertical-align: middle;
+}
+
+.social-media-buttons svg:hover {
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+.social-media-buttons .save svg {
+  background-color: unset;
+  border: none;
+  height: 25px;
+  width: 16px;
+  padding: unset;
+  border-radius: unset;
+}
+
+.comments i {
+  border-color: rgba(102, 102, 102, 0.4);
+  -webkit-box-align: center;
+  align-items: center;
+  background: transparent;
+  border: 1px solid rgb(102, 102, 102);
+  border-radius: 4px;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  min-width: 26px;
+  min-height: 14px;
+  padding: 4px;
+  position: relative;
+  width: auto;
+}
+
+.comments i::before,
+.comments i::after {
+  border-style: solid;
+  border-width: 6px 0 0 6px;
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0;
+  left: 16px;
+}
+
+.comments i::before {
+  border-color: rgb(102, 102, 102) transparent;
+  bottom: -7px;
+}
+
+.comments i::after {
+  border-color: rgb(255, 255, 255) transparent;
+  bottom: -6px;
+}
+
+.main-figure {
+  width: 1200px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.main-figure img {
+  width: 100%;
+  margin-top: 15px;
+}
+
+figcaption {
+  color: #666;
+  font-family: imperial-bt, serif;
+  text-align: left;
+  max-width: 900px;
+}
+
+figcaption span:last-child {
+  display: inline;
+  color: #888;
+  font-size: 13px;
+}
+
+.article-time {
+  font-size: 13px;
+}
+
+.create-account-block {
+  text-align: center;
+}
+
+.create-account-block h6 {
+  font-family: franklin, helvetica, arial, sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  margin: 5px 0;
+}
+
+.create-account-block hr {
+  background-color: rgb(204, 204, 204);
+  width: 75px;
+  border: none;
+  height: 1px;
+  margin: 20px auto;
+}
+
+.explain-the-theory {
+  display: grid;
+  grid-template-columns: 225px 225px 225px 225px;
+  grid-gap: 15px 10px;
+}
+
+.explain-the-theory img {
+  width: 225px;
+  height: 175px;
+}
+
+.explain-the-theory b {
+  font-size: 12px;
+  margin-right: 10px;
+}
+
+.video-figure {
+  width: 600px;
+}
+
+.video-figure iframe {
+  width: 100%;
+  height: 357.5px;
+}
+
+.comments-and-social-media > button {
+  padding: 12px 100px;
+}
+
+.comments-and-social-media {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+}
+
+/******************* Footer *******************/
+footer {
+  padding: 10px;
+  border-top: 1px solid #ebebeb;
+  margin: 10px auto 65px !important;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-between;
+  white-space: nowrap;
+  margin: 0;
+}
+
+footer ul li {
+  margin: 0 5px;
+}
+
+.social-media-buttons ul {
+  display: flex;
+}
+
+.social-media-buttons li {
+  color: #999;
+  margin-right: 16px;
+}
+
+.sidebar-search-headline-container a {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 0.7px;
+  -moz-letter-spacing: 0.7px;
+  -ms-letter-spacing: 0.7px;
+  letter-spacing: 0.7px;
+  line-height: 18px;
+  text-decoration: none;
+}
+
+.sticky-footer a {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.most-popular a {
+  text-decoration: none;
+}
+
+.bottom-navigation-links-blocks a {
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+h3.writer-name a {
+  text-decoration: underline;
+  margin-left: 5px;
+}
+
+.sidebar-search-headline-container a:hover {
+  text-decoration: underline;
+}
+
+h3.writer-name a:hover {
+  text-decoration: none;
+}
+
+h3.writer-name {
+  font-size: 15px;
+  margin: 40px auto 20px;
+  cursor: pointer;
+}
+
+.bottom-navigation::before {
+  background-color: #fff;
+  border-bottom: 1px solid #e2e2e2;
+  border-top: 2px solid #e2e2e2;
+  content: "";
+  display: block;
+  height: 1px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.bottom-navigation {
+  margin-top: 40px;
+}
+
+.bottom-navigation header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.bottom-navigation header a:last-child {
+  color: rgb(86, 123, 149);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12px;
+  text-decoration: none;
+}
+
+.bottom-navigation header .logo {
+  margin: 0;
+}
+
+.bottom-navigation nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.newsletters-link section {
+  border: 1px solid rgb(226, 226, 226);
+  padding: 15px;
+}
+
+.bottom-navigation-links-blocks li {
+  margin-bottom: 5px;
+}
+
+.bottom-navigation-links-blocks h3 {
+  font-size: 12px;
+}
+
+.bottom-navigation-links-blocks > section:last-child {
+  border-left: 1px solid rgb(226, 226, 226);
+  padding-left: 15px;
+}
+
+.bottom-navigation-links-blocks .subscription-list {
+  border-bottom: 1px solid rgb(226, 226, 226);
+  padding-bottom: 5px;
+}
+
+.create-account-block h6:nth-child(3) a {
+  color: rgb(50, 104, 145);
+  text-decoration: none;
+}
+
+.section-has-aside {
+  display: flex;
+  align-items: center;
+}
+
+.bottom-section {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  margin-top: 50px;
+}
+
+.more-articles div,
+.editors-picks-article div {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.newsletters > div:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.newsletters > div:last-child {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.basic-card h3 {
+  font-family: imperial-bt, serif;
+  font-weight: normal;
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.basic-card figure,
+.basic-card p {
+  margin: 0;
+}
+
+.newsletters-link section p,
+.newsletters-link section h3 {
+  margin: 0;
+}
+
+.newsletters-link section > div:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.newsletters-link section > div:nth-child(2) {
+  min-height: 135px;
+}
+
+.newsletters-link section > div:nth-child(2) p {
+  line-height: 1.5;
+}
+
+.newsletters-link section svg:hover circle {
+  fill: black;
+}
+
+.newsletters-link section svg:hover line {
+  stroke: white;
+}
+
+.newsletters-link img {
+  height: 82px;
+  width: 82px;
+}
+
+.section-has-aside > section:first-child {
+  margin-left: calc((100% - 600px) / 2);
+}
+
+.most-popular {
+  margin-left: 30px;
+}
+
+.most-popular a h3 {
+  font-family: imperial-bt, serif;
+  font-weight: normal;
+  font-size: 16px;
+  border-top: 1px solid rgb(226, 226, 226);
+  padding: 15px 0;
+  margin: 0;
+}
+
+.more-articles {
+  margin: 30px 0 15px;
+}
+
+.more-articles h4,
+.editors-picks-article h4 {
+  margin: 15px 0 0;
+}
+
+.basic-card {
+  width: 32%;
+  text-decoration: none;
+  margin: 15px 0;
+}
+
+.basic-card figcaption {
+  text-align: right;
+}
+
+.sticky-footer {
+  height: 55px;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid black;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  justify-content: center;
+}
