@@ -190,6 +190,10 @@ figure img {
   color: #666;
 }
 
+.c-blue {
+  color: #567b95;
+}
+
 .franklin-font {
   font-family: franklin, helvetica, arial, sans-serif;
 }
@@ -217,6 +221,22 @@ a.swap-text-decoration {
 
 a.swap-text-decoration:hover {
   text-decoration: underline;
+}
+
+.text-decoration-none {
+  text-decoration: none;
+}
+
+.font-size-14 {
+  font-size: 14px;
+}
+
+.font-size-16 {
+  font-size: 16px;
+}
+
+.font-bold {
+  font-weight: bold;
 }
 
 /******************* Style for the header *******************/
@@ -257,6 +277,10 @@ header .sidebar {
 .actions-buttons button {
   display: inline-block;
   margin: 0 5px;
+}
+
+.border-top-black {
+  border-top: 1px solid rgb(0, 0, 0);
 }
 
 /******************* Style for the article *******************/
@@ -451,7 +475,7 @@ figcaption span:last-child {
 footer {
   padding: 10px;
   border-top: 1px solid #ebebeb;
-  margin: 10px auto !important;
+  margin: 10px auto 65px !important;
   display: flex;
   justify-content: space-between;
 }
@@ -476,11 +500,6 @@ footer ul li {
   margin-right: 16px;
 }
 
-.bottom-navigation-links-blocks a {
-  font-size: 13px;
-  white-space: nowrap;
-}
-
 .sidebar-search-headline-container a {
   font-size: 14px;
   font-weight: 700;
@@ -491,6 +510,20 @@ footer ul li {
   letter-spacing: 0.7px;
   line-height: 18px;
   text-decoration: none;
+}
+
+.sticky-footer a {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.most-popular a {
+  text-decoration: none;
+}
+
+.bottom-navigation-links-blocks a {
+  font-size: 13px;
+  white-space: nowrap;
 }
 
 h3.writer-name a {
@@ -551,6 +584,11 @@ h3.writer-name {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
+.newsletters-link section {
+  border: 1px solid rgb(226, 226, 226);
+  padding: 15px;
+}
+
 .bottom-navigation-links-blocks li {
   margin-bottom: 5px;
 }
@@ -579,6 +617,119 @@ h3.writer-name {
   align-items: center;
 }
 
+.bottom-section {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  margin-top: 50px;
+}
+
+.more-articles div,
+.editors-picks-article div {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.newsletters > div:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.newsletters > div:last-child {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.basic-card h3 {
+  font-family: imperial-bt, serif;
+  font-weight: normal;
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.basic-card figure,
+.basic-card p {
+  margin: 0;
+}
+
+.newsletters-link section p,
+.newsletters-link section h3 {
+  margin: 0;
+}
+
+.newsletters-link section > div:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.newsletters-link section > div:nth-child(2) {
+  min-height: 135px;
+}
+
+.newsletters-link section > div:nth-child(2) p {
+  line-height: 1.5;
+}
+
+.newsletters-link section svg:hover circle {
+  fill: black;
+}
+
+.newsletters-link section svg:hover line {
+  stroke: white;
+}
+
+.newsletters-link img {
+  height: 82px;
+  width: 82px;
+}
+
 .section-has-aside > section:first-child {
   margin-left: calc((100% - 600px) / 2);
+}
+
+.most-popular {
+  margin-left: 30px;
+}
+
+.most-popular a h3 {
+  font-family: imperial-bt, serif;
+  font-weight: normal;
+  font-size: 16px;
+  border-top: 1px solid rgb(226, 226, 226);
+  padding: 15px 0;
+  margin: 0;
+}
+
+.more-articles {
+  margin: 30px 0 15px;
+}
+
+.more-articles h4,
+.editors-picks-article h4 {
+  margin: 15px 0 0;
+}
+
+.basic-card {
+  width: 32%;
+  text-decoration: none;
+  margin: 15px 0;
+}
+
+.basic-card figcaption {
+  text-align: right;
+}
+
+.sticky-footer {
+  height: 55px;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid black;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  justify-content: center;
 }
