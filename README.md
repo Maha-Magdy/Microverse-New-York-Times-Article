@@ -35,5 +35,5 @@ Give a star if you like this project!
 - The New York Times
 - Dennis Overbye
 
-![screenshot](The-New-York-Times-Article-first-shoot.png)
-![screenshot](The-New-York-Times-Article-index-second-shoot.png)
+![screenshot](images/The-New-York-Times-Article-first-shoot.png)
+![screenshot](images/The-New-York-Times-Article-index-second-shoot.png)
